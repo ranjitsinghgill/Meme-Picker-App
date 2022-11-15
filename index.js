@@ -6,10 +6,12 @@ const gifsOnlyOption = document.getElementById('gifs-only-option')
 const memeModalInner = document.getElementById('meme-modal-inner')
 const memeModal = document.getElementById('meme-modal')
 const memeModalCloseBtn = document.getElementById('meme-modal-close-btn')
+const main = document.getElementById('main')
 
 emotionRadios.addEventListener('change', highlightCheckedOption)
 
 memeModalCloseBtn.addEventListener('click', closeModal)
+memeModal.addEventListener('click', closeModal)
 
 getImageBtn.addEventListener('click', renderCat)
 
